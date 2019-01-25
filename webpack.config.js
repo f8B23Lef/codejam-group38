@@ -18,6 +18,15 @@ const path = require('path');
             use: ['style-loader', 'css-loader'],
           },
 		    ]
+    },
+    mode: 'development',
+    devServer: {
+      watchOptions: {
+        poll: true
+      },
+      contentBase: path.join(__dirname, 'dist'),
+      compress: true,
+      port: 9000
     }
 	};
 
