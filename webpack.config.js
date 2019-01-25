@@ -17,6 +17,16 @@ const conf = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            outputPath: 'images/',
+            name: '[name].[ext]',
+          },
+        },
+      },
     ],
   },
   mode: 'development',
