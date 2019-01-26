@@ -1,0 +1,7 @@
+@import '~leaflet/dist/leaflet.css';
+
+#mapid { 
+  height: 180px; 
+  max-width: 50%;
+  margin: 20px auto;
+}
