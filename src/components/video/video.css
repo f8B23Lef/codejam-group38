@@ -1,0 +1,22 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.video-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.video-container__item {
+  position: relative;
+  width: 50%;
+}
+
+.video-container__item > a {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+}
