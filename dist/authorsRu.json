@@ -1,0 +1,27 @@
+{
+	"0": {
+		"name": "Vasil Bykov",
+		"image": "images/Василь Быков 6.jpg",
+		"description": "Vasil Bykov (19 June 1924 – 22 June 2003) was a prolific author of novels and novellas about World War II and a significant figure in Belarusian literature and civic thought. His work earned him endorsements for the Nobel Prize nomination from, among others, Nobel Prize laureates Joseph Brodsky and Czesław Miłosz."
+	},
+	"1": {
+		"name": "Ales Adamovich",
+		"image": "images/Алесь Адамович 2.jpg",
+		"description": "Ales Adamovich was a Belarusian Soviet writer and a critic, Professor and Corresponding Member of the Academy of Sciences of Belarus, Doctor of Philosophy in philology, Doctorate in 1962 (a degree in Russia corresponding to Habilitation); member of the Supreme Soviet (1989–92). He wrote in Russian and Belarusian."
+	},
+	"2": {
+		"name": "Petrus Brovka",
+		"image":"images/Brovka.jpg",
+		"description": "Pyotr Ustinovich Brovka (Belarusian: Пётр Усці́навіч Бро́ўка, Russian: Пётр Усти́нович Бро́вка; 25 June 1905 [O.S. 12 June], Putilkovichi – 24 March 1980, Minsk) was a Soviet Belarusian poet, more commonly recognized by his literary pseudonym Petrus Brovka (also transliterated from Belarusian as Piatrus Brovka or Pjatrus Broǔka)."
+	},
+	"3": {
+		"name": "Франци́ск Бенеди́кт Казими́рович Богуше́вич",
+		"image":"images/bahushevich/Francishak_Bahushevich.jpg",
+		"description": "Франци́ск Бенеди́кт Казими́рович Богуше́вич (белор. Францішак Бенедыкт Казiмiравiч Багушэвіч; псевдонимы: Мацей Бурачок, Сымон Рэўка з-пад Барысава; 9 [21] марта 1840 год — 15 [28] апреля 1900 год) — белорусский и польский поэт, один из основоположников новой белорусской литературы. Основоположник критического реализма в белорусской литературе.",
+		"biography": "Родился в семье обедневшего дворянина Казимира Богушевича в фольварке СвираныЗавилейского (Свенцянского) уезда Виленской губернии (теперь Беларусь, Островецкий район Гродненской области). Начальное образование получил в Виленской гимназии, которую закончил в 1861 году. В том же году поступил в Петербургский университет на физико-математический факультет, однако через 2 месяца был исключён за участие в студенческих волнениях. Возвратился на родину, работал учителем в селении Дотишки. Воевал в отряде Людвика Нарбутта (Польское восстание 1863—1864 годов). После разгрома восстания жил на Украине, учился в Нежинском юридическом лицее. Работал адвокатом, защитником прав крестьянства. После амнистии для всех участников восстания, приуроченной к восхождению на трон Александра III, переехал с семьёй в Вильно. Работал в адвокатской конторе, писал статьи в польскоязычный журнал «Край». После увольнения жил в Кушлянах (теперь Сморгонский район), где и умер. Похоронен в деревне Жупраны Ошмянского района.",
+		"books": "Истоки творчества Ф. Богушевича — в общественной жизни Белоруссии, они тесно связаны с фольклором, а также с лучшими эстетическими традициями славянской поэзии. Богушевич — основоположник критического реализма в белорусской литературе. Он автор двух сборников стихотворений — «Дудка беларуская» и «Смык беларускі», которые издал в Австро-Венгрии. Первыми известными поэтическими пробами Франциска Богушевича считают найденные во Львове стихотворения на польском языке: «Новый год 1886» («Nowy rok 1886»), «Призрак надежды» («Widmo nadziei»), «Кто это?» («Kto to?»), — написанные в 1885—1886 гг. В архиве Яна Карловича сохранился автограф басни Ф. Богушевича на белорусском языке «Волк, ягнёнок, овца» («Воўк, ягня, авечка», по содержанию, 1886).",
+		"gallery": ["images/bahushevich/Francishak_Bahushevich.jpg", "images/bahushevich/Franciszak_Bahuszewicz.jpg", "images/bahushevich/with-family.jpg", "images/bahushevich/P1140503.jpg", "images/bahushevich/Frantsishak_Bagushevich__Tvory.jpg", "images/bahushevich/dudka-belarusskaya.jpg", "images/bahushevich/Аннотационная_доска_Франциску_Богушевичу.jpg"],
+		"video": "https://www.youtube.com/watch?v=7F2ROTgI7Xo",
+		"map": "a"
+	}
+}

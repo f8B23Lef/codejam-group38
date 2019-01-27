@@ -1,0 +1,23 @@
+{
+	"0": {
+		"name": "Vasil Bykov",
+		"image": "images/Василь Быков 6.jpg",
+		"description": "Vasil Bykov (19 June 1924 – 22 June 2003) was a prolific author of novels and novellas about World War II and a significant figure in Belarusian literature and civic thought. His work earned him endorsements for the Nobel Prize nomination from, among others, Nobel Prize laureates Joseph Brodsky and Czesław Miłosz.",
+		"": ""
+	},
+	"1": {
+		"name": "Ales Adamovich",
+		"image": "images/Алесь Адамович 2.jpg",
+		"description": "Ales Adamovich was a Belarusian Soviet writer and a critic, Professor and Corresponding Member of the Academy of Sciences of Belarus, Doctor of Philosophy in philology, Doctorate in 1962 (a degree in Russia corresponding to Habilitation); member of the Supreme Soviet (1989–92). He wrote in Russian and Belarusian."
+	},
+	"2": {
+		"name": "Petrus Brovka",
+		"image":"images/Brovka.jpg",
+		"description": "Pyotr Ustinovich Brovka (Belarusian: Пётр Усці́навіч Бро́ўка, Russian: Пётр Усти́нович Бро́вка; 25 June 1905 [O.S. 12 June], Putilkovichi – 24 March 1980, Minsk) was a Soviet Belarusian poet, more commonly recognized by his literary pseudonym Petrus Brovka (also transliterated from Belarusian as Piatrus Brovka or Pjatrus Broǔka)."
+	},
+	"3": {
+		"name": "Francišak Bahuševič",
+		"image":"images/bahushevich/Francishak_Bahushevich.jpg",
+		"description": "Francišak Bahuševič (Belarusian: Францішак Багушэвіч, 21 March [O.S. 9 March] 1840 – (28 April [O.S. 15 April] 1900) was a Belarusian poet, writer and lawyer, considered to be one of the initiators of modern Belarusian literature."
+	}
+}

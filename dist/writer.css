@@ -1,0 +1,61 @@
+a { 
+    text-decoration: none;
+	color: #ffffff;
+} 
+
+body {
+	margin: 0;
+	font-family: Carme, sans-serif; 
+}
+
+.container {
+	width: 76%;
+	margin: 0 auto;
+}
+
+.logo {
+	height: 40px;
+	color: #ffffff;
+	border-right: 1px solid #6ec6ff;
+}
+
+.nav-search, .nav-btn {
+	height: 25px;
+	padding: 5px;
+}
+
+.flag-icon {
+	width: 28px;
+	height: 20px;
+}
+
+.basic-information {
+	width: 100%;
+}
+
+.image-of-the-author {
+	height: 340px;	
+}
+
+@media (min-width: 425px) and (max-width: 575px) {
+	.image-of-the-author {
+		height: 450px;	
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.image-of-the-author {
+		height: 400px;	
+	}
+}
+
+.footer {
+	color: #ffffff;
+	text-align: center;
+}
+
+.developer:hover {
+	cursor: pointer;
+	text-decoration: none;
+	color: #6ec6ff;
+}
