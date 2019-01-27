@@ -23,12 +23,15 @@
 	  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav mr-auto">
 			      <li class="nav-item active">
-			        <a class="nav-link" href="">Home<span class="sr-only">(current)</span></a>
+			        <a class="nav-link" href=""><span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item active">
+			        <a class="nav-link" href="writers.html"><span class="sr-only">(current)</span></a>
 			      </li>
 
 			      <li class="nav-item dropdown">
 			        
-			        <a class="nav-link dropdown-toggle language" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ru</a>
+			        <a class="nav-link dropdown-toggle language" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
 
 			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 			          <button class="dropdown-item" onclick="changeLanguage(0)">
@@ -46,10 +49,6 @@
 			        </div>
 			      </li>
 			    </ul>
-			    <form class="form-inline my-2 my-lg-0">
-			      <input class="form-control mr-sm-2 nav-search" type="search" placeholder="Search" aria-label="Search">
-			      <button class="btn btn-outline-info my-2 p-0 nav-btn" type="submit">Search</button>
-			    </form>
 			  </div>
 			</nav>
     	</div>
@@ -57,37 +56,26 @@
 
 	<main>
 		<section class="container about-site">
-			<h2>Belarusian Writers Directory</h2>
-			<p>This unique searchable database contains profiles of some of the most important writers in Belarus.</p>
-		</section>
-
-		<section class="container row">			
-			<article class="author-of-the-day col-xl-3">
-				<h4 class="name-section p-1">Author of the day</h4>
-			</article>
-
-			<section class="directory col-xl-8 ml-3">
-				<h4 class="name-section p-1">Writers directory</h4>
-							
-			</section>
+			<h2 class="about-site__title"></h2>
+			<p class="about-site__description"></p>
 		</section>
 	
 		<section class="container team py-5">
-			<h2>Team G38</h2>
+			<h2 class="team__title"></h2>
 			<div class="row mt-4">
 			 <article class="developer col-sm-4 ">
 			 	<img src="images/irina.jpeg" alt="developer" class="developer__image">
-			 	<h4 class="py-3">Iryna Malash</h4>
+			 	<h4 class="py-3 developer-name"></h4>
 			 	<a href="https://github.com/f8b23lef" class="developer" data-toggle="tooltip" data-placement="bottom" title="https://github.com/f8b23lef">f8b23lef</a>
 			 </article>
 			 <article class="developer col-sm-4">
 			 	<img src="images/vitalik.jpg" alt="developer" class="developer__image">
-			 	<h4 class="py-3">Vitali Tyrlya</h4>
+			 	<h4 class="py-3 developer-name"></h4>
 			 	<a href="https://github.com/vitalur" class="developer" data-toggle="tooltip" data-placement="bottom" title="https://github.com/vitalur">vitalur</a>
 			 </article>
 			 <article class="developer col-sm-4">
 			 	<img src="images/maxim.jpg" alt="developer" class="developer__image">
-			 	<h4 class="py-3">Maksim Hrytskevich</h4>
+			 	<h4 class="py-3 developer-name"></h4>
 			 	<a href="https://github.com/tebeskashi" class="developer" data-toggle="tooltip" data-placement="bottom" title="https://github.com/tebeskashi">tebeskashi</a>
 			 </article>
 			</div>
@@ -96,7 +84,7 @@
 	</main>
 
 	<footer class="bg-dark footer mt-2 py-3">
-		<p>Group 38</p>
+		<p></p>
 		<div class="d-flex justify-content-center">
 		</div>
 	</footer>

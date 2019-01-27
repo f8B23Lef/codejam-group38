@@ -1,12 +1,21 @@
-// const L = require('leaflet');
-// import { L } from 'leaflet';
-
 window.onload = () => {
+	let lang = localStorage.getItem('lang');
+	fetch('./language.json').then(response => {
+		return response.json();
+	}).then(data => {
+		drawPage(data[lang]);
+	})
+
 	fetch('./authorsRu.json').then(response => {
 		return response.json();
 	}).then(data => {
 		draw(data, localStorage.getItem('index'));
 	})
+}
+
+function drawPage(data) {
+	$('.nav-link')[0].innerHTML = data.home;
+	$('.nav-link')[1].innerHTML = data.writers;
 }
 
 function draw(data, i) {
@@ -23,39 +32,13 @@ function draw(data, i) {
 	booksEl += `</ul>`
 	$('.books').append(booksEl);
 
-	// let galleryPictures = ``;
-	// for (let j = 0, len = data[i].gallery.length; j < len; j++) {
-	// 	galleryPictures += `<img src="${data[i].gallery[j]}" alt="picture ${data[i].gallery[j]}">`
-	// }
-	// $('.gallery').append(galleryPictures);
-	let galleryPictures = '<div class="container"><div class="row">';
+	let galleryPictures = ``;
 	for (let j = 0, len = data[i].gallery.length; j < len; j++) {
-		galleryPictures += `
-			<div class="col-lg-3 col-md-4 col-6 thumb">
-				<a data-fancybox="gallery" href="${data[i].gallery[j]}">
-						<img class="img-fluid" src="${data[i].gallery[j]}" alt="${data[i].gallery[j]}">
-				</a>
-		</div>`;
+		galleryPictures += `<img src="${data[i].gallery[j]}" alt="picture ${data[i].gallery[j]}">`
 	}
-	galleryPictures += '</div></div>';
 	$('.gallery').append(galleryPictures);
 
-	// $('.video').append(data[i].video);
-  const videoEl = `<div class="video-container__item">
-    <img class="card-img-top img-fluid" src="${data[i].gallery[0]}" />
-    <a data-fancybox href="${data[i].video[0]}">${data[i].video[1]}</a></div>`;
-	$('.video').append(videoEl);
+	$('.video').append(data[i].video);
 
-
-	// $('.map').append(data[i].map);
-
-  const accessToken = 'pk.eyJ1IjoieXJ0eXJ0eSIsImEiOiJjanJkeHJkNWQxbHo2M3lycDliZGowNTZwIn0.eJAnyug_wV2ikOdv2bRhZg';
-  const mymap = L.map('map').setView(data[i].map, 13);
-  L.tileLayer(`https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=${accessToken}`, {
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: `${accessToken}`,
-  }).addTo(mymap);
-
-  L.marker(data[i].map).addTo(mymap);
+	$('.map').append(data[i].map);
 }
