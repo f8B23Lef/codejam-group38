@@ -1,27 +1,26 @@
 window.onload = () => {
-	console.log("location.href", location.href)
 	fetch('./authorsRu.json').then(response => {
 		return response.json();
 	}).then(data => {
-		draw(data);
+		draw(data, localStorage.getItem('index'));
 	})
 }
 
-function draw(data) {
-	let info = `<img src="${data[3].image}" alt="image of the author" class="col-12 col-sm-8 col-md-5 col-lg-4 image-of-the-author rounded float-left">
-				<h2 class="information__name">${data[3].name}</h2>
-				<p class="information__biography">${data[3].biography}</p>`;
+function draw(data, i) {
+	let info = `<img src="${data[i].image}" alt="image of the author" class="col-12 col-sm-8 col-md-5 col-lg-4 image-of-the-author rounded float-left">
+				<h2 class="information__name">${data[i].name}</h2>
+				<p class="information__biography">${data[i].biography}</p>`;
 	$('.information').append(info);
 
-	$('.books').append(data[3].books);
+	$('.books').append(data[i].books);
 
 	let galleryPictures = ``;
-	for (let i = 0, len = data[3].gallery.length; i < len; i++) {
-		galleryPictures += `<img src="${data[3].gallery[i]}" alt="picture ${data[3].gallery[i]}">`
+	for (let j = 0, len = data[i].gallery.length; j < len; j++) {
+		galleryPictures += `<img src="${data[i].gallery[j]}" alt="picture ${data[i].gallery[j]}">`
 	}
 	$('.gallery').append(galleryPictures);
 
-	$('.video').append(data[3].video);
+	$('.video').append(data[i].video);
 
-	$('.map').append(data[3].map);
+	$('.map').append(data[i].map);
 }

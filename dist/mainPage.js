@@ -39,7 +39,6 @@ function draw(data) {
 }
 
 function go(i) {
-	console.log("i", i)
-	location.href = "writer.html/" + i;
-
+	localStorage.setItem('index', i);
+	location.href += "writer.html";
 }
