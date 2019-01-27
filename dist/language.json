@@ -1,0 +1,27 @@
+{
+	"ru": {
+		"home": "Главная",
+		"writers": "Список писателей",
+		"titleOfDescription": "Список белорусских писателей",
+		"description": "Эта уникальная база данных с возможностью поиска содержит профили некоторых из наиболее важных авторов в Беларуси.",
+		"team": "Команда 38",
+		"name": ["Ирина Малаш", "Виталик Тырля", "Максим Грицкевич"],
+		"search": "Поиск",
+		"authorOfTheDay": "Автор дня",
+		"authors": "Писатели",
+		"read": "Читать"
+	},
+	"en": {
+		"home": "Home",
+		"writers": "Writers",
+		"titleOfDescription": "Belarusian Writers Directory",
+		"description": "This unique searchable database contains profiles of some of the most important writers in Belarus.",
+		"team": "Team 38",
+		"name": ["Iryna Malash", "Vitali Tyrlya", "Maksim Hrytskevich"],
+		"search": "Search",
+		"authorOfTheDay": "Author of the day",
+		"authors": "Writers directory",
+		"read": "Read"
+	},
+	"by": ""
+}
