@@ -1,4 +1,7 @@
+const language = ['ru', 'en', 'by'];
+
 window.onload = () => {
+	$('.language')[0].innerHTML = 'ru';
 	fetch('./authors.json').then(response => {
 		return response.json();
 	}).then(data => {
@@ -41,4 +44,8 @@ function draw(data) {
 function go(i) {
 	localStorage.setItem('index', i);
 	location.href += "writer.html";
+}
+
+function changeLanguage(index) {
+	$('.language')[0].innerHTML = language[index];
 }

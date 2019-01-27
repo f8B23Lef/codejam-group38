@@ -57,6 +57,19 @@ body {
 	padding: 0;
 }
 
+.team {
+	text-align: center;
+}
+
+.developer {
+	color: #000000;
+}
+
+.developer__image {
+	width: 200px;
+	height: 200px;
+}
+
 .footer {
 	color: #ffffff;
 	text-align: center;

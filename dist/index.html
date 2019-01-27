@@ -23,25 +23,26 @@
 	  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav mr-auto">
 			      <li class="nav-item active">
-			        <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+			        <a class="nav-link" href="">Home<span class="sr-only">(current)</span></a>
 			      </li>
+
 			      <li class="nav-item dropdown">
-			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			          Language
-			        </a>
+			        
+			        <a class="nav-link dropdown-toggle language" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ru</a>
+
 			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			          <a class="dropdown-item" href="#">
+			          <button class="dropdown-item" onclick="changeLanguage(0)">
 			          	<img src="images/ru.png" alt="ru" class="flag-icon img-fluid">
 			          	Русский язык
-			          </a>
-			          <a class="dropdown-item" href="#">
+			          </button>
+			          <button class="dropdown-item" onclick="changeLanguage(1)">
 						<img src="images/en.png" alt="en" class="flag-icon">
 			          	English
-			          </a>
-			          <a class="dropdown-item" href="#">
+			          </button>
+			          <button class="dropdown-item" onclick="changeLanguage(2)">
 			          	<img src="images/by.png" alt="by" class="flag-icon">
 			          	Беларуская мова
-			          </a>
+			          </button>
 			        </div>
 			      </li>
 			    </ul>
@@ -60,7 +61,7 @@
 			<p>This unique searchable database contains profiles of some of the most important writers in Belarus.</p>
 		</section>
 
-		<div class="container row">			
+		<section class="container row">			
 			<article class="author-of-the-day col-xl-3">
 				<h4 class="name-section p-1">Author of the day</h4>
 			</article>
@@ -69,16 +70,34 @@
 				<h4 class="name-section p-1">Writers directory</h4>
 							
 			</section>
-		</div>
+		</section>
+	
+		<section class="container team py-5">
+			<h2>Team G38</h2>
+			<div class="row mt-4">
+			 <article class="developer col-sm-4 ">
+			 	<img src="images/irina.jpeg" alt="developer" class="developer__image">
+			 	<h4 class="py-3">Iryna Malash</h4>
+			 	<a href="https://github.com/f8b23lef" class="developer" data-toggle="tooltip" data-placement="bottom" title="https://github.com/f8b23lef">f8b23lef</a>
+			 </article>
+			 <article class="developer col-sm-4">
+			 	<img src="images/vitalik.jpg" alt="developer" class="developer__image">
+			 	<h4 class="py-3">Vitali Tyrlya</h4>
+			 	<a href="https://github.com/vitalur" class="developer" data-toggle="tooltip" data-placement="bottom" title="https://github.com/vitalur">vitalur</a>
+			 </article>
+			 <article class="developer col-sm-4">
+			 	<img src="images/maxim.jpg" alt="developer" class="developer__image">
+			 	<h4 class="py-3">Maksim Hrytskevich</h4>
+			 	<a href="https://github.com/tebeskashi" class="developer" data-toggle="tooltip" data-placement="bottom" title="https://github.com/tebeskashi">tebeskashi</a>
+			 </article>
+			</div>
+		</section>
+
 	</main>
 
 	<footer class="bg-dark footer mt-2 py-3">
 		<p>Group 38</p>
 		<div class="d-flex justify-content-center">
-		  <a href="https://github.com/f8b23lef" class="p-2 bd-highlight developer" data-toggle="tooltip" data-placement="bottom" title="https://github.com/f8b23lef">Iryna Malash</a>
-		  <a href="https://github.com/vitalur" class="p-2 bd-highlight developer" data-toggle="tooltip" data-placement="bottom" title="https://github.com/vitalur">Vitali Tyrlya</a>
-		  <a href="https://github.com/antonprotas" class="p-2 bd-highlight developer" data-toggle="tooltip" data-placement="bottom" title="https://github.com/antonprotas">Anton Protasevich</a>
-		  <a href="https://github.com/tebeskashi" class="p-2 bd-highlight developer" data-toggle="tooltip" data-placement="bottom" title="https://github.com/tebeskashi">Maksim Hrytskevich</a>
 		</div>
 	</footer>
 
