@@ -1,3 +1,6 @@
+/* @import '~leaflet/dist/leaflet.css'; */
+/* @import "~bootstrap/dist/css/bootstrap.min.css"; */
+
 a { 
     text-decoration: none;
 	color: #ffffff;
@@ -62,4 +65,55 @@ body {
 	cursor: pointer;
 	text-decoration: none;
 	color: #6ec6ff;
+}
+
+/* for map */
+#map { 
+  height: 180px; 
+  /* max-width: 50%; */
+	margin: 20px auto;
+
+	border: 1px solid red;
+	width: 400px;
+}
+
+/* for video */
+.video-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.video-container__item {
+  position: relative;
+  width: 50%;
+}
+
+.video-container__item > a {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+}
+
+/* for gallery */
+.thumb img {
+  -webkit-filter: grayscale(0);
+  filter: none;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.thumb img:hover {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.thumb {
+  padding: 5px;
 }
