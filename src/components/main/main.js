@@ -39,7 +39,6 @@ export default () => {
   document.querySelectorAll('.dropdown-item').forEach((button) => {
     button.addEventListener('click', (e) => {
       e.preventDefault();
-      // console.log('click', e.target, e.target.querySelector('img').alt);
       const index = e.target.querySelector('img').alt;
       $('.language')[0].innerHTML = index;
       localStorage.setItem('lang', index);

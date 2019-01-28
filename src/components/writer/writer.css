@@ -61,25 +61,16 @@ body {
   text-align: center;
 }
 
-/* .developer:hover {
-  cursor: pointer;
-  text-decoration: none;
-  color: #6ec6ff;
-} */
-
 .section__name {
   text-align: center;
 }
 
-/* for map */
 #map { 
   height: 250px; 
-  /* max-width: 50%; */
   margin: 20px auto;
-  width: 400px;
+  width: 80%;
 }
 
-/* for video */
 .video-container {
   display: flex;
   justify-content: space-around;
@@ -89,8 +80,6 @@ body {
 .video-container__item {
   position: relative;
   width: 50%;
-  /* width: 400px;
-  height: 300px; */
 }
 
 .video-container__item > a {
@@ -103,7 +92,6 @@ body {
   color: white;
 }
 
-/* for gallery */
 .thumb img {
   -webkit-filter: grayscale(0);
   filter: none;
@@ -122,8 +110,10 @@ body {
   padding: 5px;
 }
 
+.timeline-year {
+  font-weight: 600;
+}
 
-/* for timeline */
 ul.timeline {
   list-style-type: none;
   position: relative;
@@ -151,7 +141,7 @@ ul.timeline > li:before {
   display: inline-block;
   position: absolute;
   border-radius: 50%;
-  border: 3px solid #22c0e8;
+  border: 3px solid #6ec6ff;
   left: 20px;
   width: 20px;
   height: 20px;

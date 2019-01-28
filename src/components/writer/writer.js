@@ -75,34 +75,37 @@ const gallery = {
 const renderTranslatedInterfaceElements = (data) => {
   $('.nav-link')[0].innerHTML = data.home;
   $('.nav-link')[1].innerHTML = data.writers;
+
+  $('.books')[0].innerHTML = `<h3 class="py-2 section__name">${data.bibliography}</h3>`;
+  $('.gallery')[0].innerHTML = `<h3 class="py-2 section__name">${data.gallery}</h3>`;
+  $('.video')[0].innerHTML = `<h3 class="py-2 section__name">${data.video}</h3>`;
+  $('.map')[0].innerHTML = `<h3 class="py-2 section__name">${data.place}</h3>`;
+  $('.footer')[0].innerHTML = data.team;
 };
 
 const drawContent = () => {
   const data = authorsRuJson;
   const i = localStorage.getItem('index');
-  const info = `<img src="${writerAvatars[i]}" alt="image of the author" class="col-12 col-sm-8 col-md-5 col-lg-4 image-of-the-author">
-    <h2 class="information__name">${data[i].name}</h2>
-    <p class="information__biography">${data[i].biography}</p>`;
+  const info = `
+    <img src="${writerAvatars[i]}" alt="image of the author" class="col-12 col-sm-8 col-md-5 col-lg-4 image-of-the-author">
+      <div class="information__text col-sm-4 sol-md-7 col-lg-8">
+        <h2 class="information__name">${data[i].name}</h2>
+        <p class="information__biography">${data[i].description}</p>
+      </div>`;
   $('.information').append(info);
 
-//   const timelineEl = `<ul class="timeline">
-//   <li>
-//     <p>21 March, 2014</p>
-//     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-//   </li>
-//   <li>
-//     <a href="#">21 000 Job Seekers</a>
-//     <a href="#" class="float-right">4 March, 2014</a>
-//     <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
-//   </li>
-//   <li>
-//     <a href="#">Awesome Employers</a>
-//     <a href="#" class="float-right">1 April, 2014</a>
-//     <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
-//   </li>
-// </ul>
-//   `;
-//   $('#root').append(timelineEl);
+
+  let timelineEl = '<ul class="timeline">';
+  Object.keys(data[i].biography).forEach((key) => {
+    timelineEl += `
+      <li>
+        <p class="timeline-year">${key}</p>
+        <p>${data[i].biography[key]}</p>
+      </li>`;
+  });
+  timelineEl += '</ul>';
+
+  $('#timeline').append(timelineEl);
 
   const booksArr = data[i].books;
   let booksEl = '<ul>';
@@ -141,6 +144,7 @@ const drawContent = () => {
 };
 
 export default () => {
+  window.scrollTo(0, 0);
   $('body').append(template);
 
   document.querySelector('.link-writers').addEventListener('click', (e) => {

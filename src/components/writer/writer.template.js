@@ -26,8 +26,8 @@ export default `
     <div class="information row"></div>
   </section>
 
-  <section id="root" class="border-bottom"></section>
-
+  <section id="timeline" class="border-bottom container"></section>
+  
   <section class="container books py-5 border-bottom"></section>
 
   <section class="gallery py-5 border-bottom"></section>

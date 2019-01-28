@@ -47,7 +47,9 @@ const drawContent = (langData) => {
     directory.append(card);
   }
 
-  const rand = Math.floor(Math.random() * len);
+  const date = new Date();
+  const rand = date.getDate() % len;
+
   $('.author-of-the-day').append(`
     <div class="card">
       <div class="card-body">
@@ -124,6 +126,7 @@ const search = () => {
 };
 
 export default () => {
+  window.scrollTo(0, 0);
   $('body').append(template);
 
   document.querySelector('.search__btn').addEventListener('click', search);
