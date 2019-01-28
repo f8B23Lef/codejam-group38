@@ -11,6 +11,8 @@ import bykovAvatar from './images/bykov/bykovAvatar.jpg';
 import brovkaAvatar from './images/brovka/brovkaAvatar.jpg';
 import bahushevichAvatar from './images/bahushevich/bahushevichAvatar.jpg';
 import adamovichAvatar from './images/adamovich/adamovichAvatar.jpg';
+import tankAvatar from './images/tank/tankAvatar.jpg';
+import melezhAvatar from './images/melezh/melezhAvatar.jpg';
 
 import bykov1 from './images/bykov/bykov1.jpg';
 import bykov2 from './images/bykov/bykov2.jpg';
@@ -44,15 +46,30 @@ import bahushevich4 from './images/bahushevich/bahushevich4.jpg';
 import bahushevich5 from './images/bahushevich/bahushevich5.jpg';
 import bahushevich6 from './images/bahushevich/bahushevich6.jpg';
 
+import tank1 from './images/tank/tank1.jpg';
+import tank2 from './images/tank/tank2.jpg';
+import tank3 from './images/tank/tank3.jpg';
+import tank4 from './images/tank/tank4.jpg';
+import tank5 from './images/tank/tank5.jpg';
+
+import melezh1 from './images/melezh/melezh1.jpg';
+import melezh2 from './images/melezh/melezh2.jpg';
+import melezh3 from './images/melezh/melezh3.jpg';
+import melezh4 from './images/melezh/melezh4.jpg';
+import melezh5 from './images/melezh/melezh5.jpg';
+
 const L = require('leaflet');
 
-const writerAvatars = [bykovAvatar, adamovichAvatar, brovkaAvatar, bahushevichAvatar];
+const writerAvatars = [bykovAvatar, adamovichAvatar, brovkaAvatar, bahushevichAvatar, tankAvatar,
+  melezhAvatar];
 
 const gallery = {
   0: [bykov1, bykov2, bykov3, bykov4, bykov5, bykov6, bykov7, bykov8],
   1: [adamovich1, adamovich2, adamovich3, adamovich4, adamovich5, adamovich6, adamovich7],
   2: [brovka1, brovka2, brovka3, brovka4, brovka5, brovka6, brovka7],
   3: [bahushevich1, bahushevich2, bahushevich3, bahushevich4, bahushevich5, bahushevich6],
+  4: [tank1, tank2, tank3, tank4, tank5],
+  5: [melezh1, melezh2, melezh3, melezh4, melezh5],
 };
 
 const renderTranslatedInterfaceElements = (data) => {

@@ -11,8 +11,11 @@ import bykovAvatar from './images/bykovAvatar.jpg';
 import adamovichAvatar from './images/adamovichAvatar.jpg';
 import brovkaAvatar from './images/brovkaAvatar.jpg';
 import bahushevichAvatar from './images/bahushevichAvatar.jpg';
+import tankAvatar from './images/tankAvatar.jpg';
+import melezhAvatar from './images/melezhAvatar.jpg';
 
-const images = [bykovAvatar, adamovichAvatar, brovkaAvatar, bahushevichAvatar];
+const images = [bykovAvatar, adamovichAvatar, brovkaAvatar, bahushevichAvatar, tankAvatar,
+  melezhAvatar];
 
 const renderTranslatedInterfaceElements = (data) => {
   $('.nav-link')[0].innerHTML = data.home;
