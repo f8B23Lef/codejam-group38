@@ -9,7 +9,12 @@
 		"search": "Поиск",
 		"authorOfTheDay": "Автор дня",
 		"authors": "Писатели",
-		"read": "Читать"
+		"read": "Читать",
+		"bibliography": "Список литературы",
+		"gallery": "Галерея",
+		"video": "Видео с писателем",
+		"place": "Место рождения",
+		"placeOfBirth": "Место рождения"
 	},
 	"en": {
 		"home": "Home",
@@ -21,7 +26,12 @@
 		"search": "Search",
 		"authorOfTheDay": "Author of the day",
 		"authors": "Writers directory",
-		"read": "Read"
+		"read": "Read",
+		"bibliography": "Bibliography",
+		"gallery": "Gallery",
+		"video": "Video with writer",
+		"place": "Place of Birth",
+		"placeOfBirth": "Place of Birth"
 	},
 	"by": {
 		"home": "Галоўная",
@@ -33,6 +43,11 @@
 		"search": "Пошук",
 		"authorOfTheDay": "Аўтар дня",
 		"authors": "Пісьменнікі",
-		"read": "Чытаць"
+		"read": "Чытаць",
+		"bibliography": "Бібліяграфія",
+		"gallery": "Галерэя",
+		"video": "Відэа з пісьменнікам",
+		"place": "Месца нараджэння",
+		"placeOfBirth": "Месца нараджэння"
 	}
 }

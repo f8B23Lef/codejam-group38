@@ -18,7 +18,7 @@ export default `
         </ul>
         <div class="form-inline my-2 my-lg-0 search">
           <input class="form-control mr-sm-2 nav-search search__input" type="search" aria-label="Search">
-          <button class="btn btn-outline-info my-2 p-0 nav-btn search__btn" onclick="search()"></button>
+          <button class="btn btn-outline-info my-2 p-0 nav-btn search__btn"></button>
         </div>
       </div>
     </nav>
@@ -31,7 +31,7 @@ export default `
       <h4 class="name-section p-1"></h4>
     </article>
 
-    <section class="directory col-xl-8 ml-3">
+    <section class="directory col-xl-8">
       <h4 class="name-section p-1"></h4>
     </section>
   </section>

@@ -22,19 +22,19 @@ export default `
 </header>
 
 <main>
-  <section class="basic-information row container mt-5">
-    <div class="information"></div>
-
-    <div id="root"></div>
-
-    <div class="books"></div>
-
-    <div class="gallery"></div>
-
-    <div class="video video-container"></div>
-
-    <div class="map" id="map"></div>
+  <section class="basic-information container mt-5">
+    <div class="information row"></div>
   </section>
+
+  <section id="root" class="border-bottom"></section>
+
+  <section class="container books py-5 border-bottom"></section>
+
+  <section class="gallery py-5 border-bottom"></section>
+
+  <section class="video video-container py-5 "></section>
+
+  <section class="map py-5" id="map"></section>
 </main>
 
 <footer class="bg-dark footer mt-2 py-3">

@@ -83,3 +83,9 @@ body {
   text-decoration: none;
   color: #6ec6ff;
 }
+
+@media screen and (min-width: 1200px) {
+	.directory {
+		margin-left: 40px;	
+	}
+}
