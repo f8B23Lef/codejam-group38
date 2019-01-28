@@ -2,7 +2,9 @@ import 'bootstrap';
 import $ from 'jquery';
 import template from './main.template';
 import './main.css';
-import langJson from '../json/language.json';
+import langJson from '../../data/language.json';
+
+import renderWritersPage from '../writers/writers';
 
 const renderTranslatedInterfaceElements = (data) => {
   $('.nav-link')[0].innerHTML = data.home;
@@ -36,11 +38,19 @@ export default () => {
 
   document.querySelectorAll('.dropdown-item').forEach((button) => {
     button.addEventListener('click', (e) => {
-      // console.log('click', e.target.querySelector('img').alt);
+      e.preventDefault();
+      // console.log('click', e.target, e.target.querySelector('img').alt);
       const index = e.target.querySelector('img').alt;
       $('.language')[0].innerHTML = index;
       localStorage.setItem('lang', index);
       window.location.reload(true);
     });
+  });
+
+  document.querySelector('.link-writers').addEventListener('click', (e) => {
+    e.preventDefault();
+
+    $('body').empty();
+    renderWritersPage();
   });
 };
