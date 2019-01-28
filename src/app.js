@@ -1,6 +1,5 @@
-import renderMainScreen from './screens/main/main';
+import renderMainPage from './components/main/main';
 
 window.onload = () => {
-  console.log('Hello world!');
-  renderMainScreen();
+  renderMainPage();
 };
